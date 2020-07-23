@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F2049B64-92AE-48E8-9F6A-BA9E1CC67A37}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProVision</RootNamespace>
+    <AssemblyName>ProVision</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="halcondotnet">
+      <HintPath>..\ProCommon\SolutionReSource\DllForImageProcess\Halcon\halcondotnet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Calibration\CalibrateAssistant.cs" />
+    <Compile Include="Calibration\FrmCalibratePointBased.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calibration\FrmCalibratePointBased.Designer.cs">
+      <DependentUpon>FrmCalibratePointBased.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Communal\Defination.cs" />
+    <Compile Include="Communal\Functions.cs" />
+    <Compile Include="InteractiveROI\GraphicContext.cs" />
+    <Compile Include="InteractiveROI\HObjectEntity.cs" />
+    <Compile Include="InteractiveROI\HWndCtrller.cs" />
+    <Compile Include="InteractiveROI\ROI.cs" />
+    <Compile Include="InteractiveROI\ROIAnnulus.cs" />
+    <Compile Include="InteractiveROI\ROICircle.cs" />
+    <Compile Include="InteractiveROI\ROICircularArc.cs" />
+    <Compile Include="InteractiveROI\ROIManager.cs" />
+    <Compile Include="InteractiveROI\ROILine.cs" />
+    <Compile Include="InteractiveROI\ROIRectangle1.cs" />
+    <Compile Include="InteractiveROI\ROIRectangle2.cs" />
+    <Compile Include="MatchModel\FrmMatchModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatchModel\FrmMatchModel.Designer.cs">
+      <DependentUpon>FrmMatchModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MatchModel\MatchModelAssistant.cs" />
+    <Compile Include="MatchModel\MatchModelOpt.cs" />
+    <Compile Include="MatchModel\MatchModelOptAccuracy.cs" />
+    <Compile Include="MatchModel\MatchModelOptResults.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Classify\" />
+    <Folder Include="OCR\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Calibration\FrmCalibratePointBased.resx">
+      <DependentUpon>FrmCalibratePointBased.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatchModel\FrmMatchModel.resx">
+      <DependentUpon>FrmMatchModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CFCEBB61-91FD-430F-86E7-E9C3E5C48DC9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProDriver</RootNamespace>
+    <AssemblyName>ProDriver</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Basler.Pylon, Version=1.1.0.0, Culture=neutral, PublicKeyToken=e389355f398382ab, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ProCommon\SolutionReSource\DllForImageProcess\Basler\Basler.Pylon.dll</HintPath>
+    </Reference>
+    <Reference Include="bgapi2_genicam_dotnet">
+      <HintPath>..\ProCommon\SolutionReSource\DllForImageProcess\Baumer\bgapi2_genicam_dotnet.dll</HintPath>
+    </Reference>
+    <Reference Include="CLIDelegate">
+      <HintPath>..\ProCommon\SolutionReSource\DllForImageProcess\DaHua\CLIDelegate.dll</HintPath>
+    </Reference>
+    <Reference Include="halcondotnet">
+      <HintPath>..\ProCommon\SolutionReSource\DllForImageProcess\Halcon\halcondotnet.dll</HintPath>
+    </Reference>
+    <Reference Include="HZZHController">
+      <HintPath>..\ProCommon\SolutionReSource\DllForMotion\HZZHMotion\HZZHController.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\ProCommon\SolutionReSource\DllForMotion\HZZHMotion\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Modbus">
+      <HintPath>..\ProCommon\SolutionReSource\DllForMotion\HZZHMotion\Modbus.dll</HintPath>
+    </Reference>
+    <Reference Include="MvCameraControl.Net">
+      <HintPath>..\ProCommon\SolutionReSource\DllForImageProcess\HikVision\MvCameraControl.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="MVSDK">
+      <HintPath>..\ProCommon\SolutionReSource\DllForImageProcess\MindVision\MVSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ThridLibray">
+      <HintPath>..\ProCommon\SolutionReSource\DllForImageProcess\DaHua\ThridLibray.dll</HintPath>
+    </Reference>
+    <Reference Include="Unme.Common">
+      <HintPath>..\ProCommon\SolutionReSource\DllForMotion\HZZHMotion\Unme.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="UsbNET">
+      <HintPath>..\ProCommon\SolutionReSource\DllForImageProcess\DaHeng\UsbNET.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Auxiliary\DMC2210.cs" />
+    <Compile Include="Auxiliary\HZZHCtrller.cs" />
+    <Compile Include="Auxiliary\UniDAQ.cs" />
+    <Compile Include="Auxiliary\Zmcaux.cs" />
+    <Compile Include="Driver\BoardDriver_HZZH.cs" />
+    <Compile Include="Driver\BoardDriver_ZMotion.cs" />
+    <Compile Include="Driver\CameraDriver_Basler.cs" />
+    <Compile Include="Driver\CameraDriver_Baumer.cs" />
+    <Compile Include="Driver\CameraDriver_DaHengUSB.cs" />
+    <Compile Include="Driver\CameraDriver_DaHua.cs" />
+    <Compile Include="Driver\CameraDriver_Halcon.cs" />
+    <Compile Include="Driver\CameraDriver_HikVision.cs" />
+    <Compile Include="Driver\CameraDriver_MindVision.cs" />
+    <Compile Include="Driver\Driver.cs" />
+    <Compile Include="APIHandle\APIHandle.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProCommon\ProCommon.csproj">
+      <Project>{b06811b0-c718-488a-abeb-35aed0ef549d}</Project>
+      <Name>ProCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProVision\ProVision.csproj">
+      <Project>{95b475a6-830e-4f3b-93c6-9e01ef9266f9}</Project>
+      <Name>ProVision</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CFB8C9AF-4B33-4E40-80DC-DBDE139E8AC5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProCommon</RootNamespace>
+    <AssemblyName>ProCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.BonusSkins.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SolutionReSource\DllForDevExpress\DevExpress.BonusSkins.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SolutionReSource\DllForDevExpress\DevExpress.Data.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Images.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SolutionReSource\DllForDevExpress\DevExpress.Images.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v17.2.Core, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SolutionReSource\DllForDevExpress\DevExpress.Office.v17.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v17.2.Core, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SolutionReSource\DllForDevExpress\DevExpress.Pdf.v17.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SolutionReSource\DllForDevExpress\DevExpress.Printing.v17.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v17.2.Core, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SolutionReSource\DllForDevExpress\DevExpress.RichEdit.v17.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v17.2.Core, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SolutionReSource\DllForDevExpress\DevExpress.Sparkline.v17.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SolutionReSource\DllForDevExpress\DevExpress.Utils.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SolutionReSource\DllForDevExpress\DevExpress.XtraBars.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SolutionReSource\DllForDevExpress\DevExpress.XtraEditors.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SolutionReSource\DllForDevExpress\DevExpress.XtraGrid.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SolutionReSource\DllForDevExpress\DevExpress.XtraLayout.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SolutionReSource\DllForDevExpress\DevExpress.XtraNavBar.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SolutionReSource\DllForDevExpress\DevExpress.XtraPrinting.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SolutionReSource\DllForDevExpress\DevExpress.XtraTreeList.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SolutionReSource\DllForDevExpress\DevExpress.XtraVerticalGrid.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="halcondotnet">
+      <HintPath>SolutionReSource\DllForImageProcess\Halcon\halcondotnet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Communal\Defination.cs" />
+    <Compile Include="Communal\Functions.cs" />
+    <Compile Include="UserDefControl\UsrCtrlLocationDebug.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserDefControl\UsrCtrlLocationDebug.Designer.cs">
+      <DependentUpon>UsrCtrlLocationDebug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserDefForm\FrmCalibratePlateBased.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDefForm\FrmCalibratePlateBased.designer.cs">
+      <DependentUpon>FrmCalibratePlateBased.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserDefForm\FrmCheckProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDefForm\FrmCheckProgress.designer.cs">
+      <DependentUpon>FrmCheckProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserDefForm\FrmLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDefForm\FrmLogIn.designer.cs">
+      <DependentUpon>FrmLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserDefForm\FrmMotionJog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDefForm\FrmMotionJog.Designer.cs">
+      <DependentUpon>FrmMotionJog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserDefForm\FrmMsgBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDefForm\FrmMsgBox.Designer.cs">
+      <DependentUpon>FrmMsgBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserDefForm\FrmPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDefForm\FrmPreview.designer.cs">
+      <DependentUpon>FrmPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserDefForm\FrmAccountManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDefForm\FrmAccountManager.designer.cs">
+      <DependentUpon>FrmAccountManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserDefForm\FrmModifyRegion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDefForm\FrmModifyRegion.designer.cs">
+      <DependentUpon>FrmModifyRegion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserDefForm\FrmROIInteractive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDefForm\FrmROIInteractive.designer.cs">
+      <DependentUpon>FrmROIInteractive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserDefForm\FrmSetConfigs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDefForm\FrmSetConfigs.Designer.cs">
+      <DependentUpon>FrmSetConfigs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserDefForm\FrmToolCenterOffset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDefForm\FrmToolCenterOffset.Designer.cs">
+      <DependentUpon>FrmToolCenterOffset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserDefForm\FrmWait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDefForm\FrmWait.designer.cs">
+      <DependentUpon>FrmWait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="IWshRuntimeLibrary">
+      <Guid>{F935DC20-1CF0-11D0-ADB9-00C04FD58A0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="UserDefControl\UsrCtrlLocationDebug.resx">
+      <DependentUpon>UsrCtrlLocationDebug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDefForm\FrmCalibratePlateBased.resx">
+      <DependentUpon>FrmCalibratePlateBased.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDefForm\FrmCheckProgress.resx">
+      <DependentUpon>FrmCheckProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDefForm\FrmLogIn.resx">
+      <DependentUpon>FrmLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDefForm\FrmMotionJog.resx">
+      <DependentUpon>FrmMotionJog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDefForm\FrmMsgBox.resx">
+      <DependentUpon>FrmMsgBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDefForm\FrmPreview.resx">
+      <DependentUpon>FrmPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDefForm\FrmAccountManager.resx">
+      <DependentUpon>FrmAccountManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDefForm\FrmModifyRegion.resx">
+      <DependentUpon>FrmModifyRegion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDefForm\FrmROIInteractive.resx">
+      <DependentUpon>FrmROIInteractive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDefForm\FrmSetConfigs.resx">
+      <DependentUpon>FrmSetConfigs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDefForm\FrmToolCenterOffset.resx">
+      <DependentUpon>FrmToolCenterOffset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDefForm\FrmWait.resx">
+      <DependentUpon>FrmWait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProVision\ProVision.csproj">
+      <Project>{f2049b64-92ae-48e8-9f6a-ba9e1cc67a37}</Project>
+      <Name>ProVision</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\ProCommon.Communal.InVarObj.datasource" />
+    <None Include="Properties\DataSources\ProCommon.Communal.OutVarObj.datasource" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

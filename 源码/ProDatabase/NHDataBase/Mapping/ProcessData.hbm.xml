@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <!--Build:Template Handwrite by xYz_Albert-->
+  <class name="ProDatabase.Entity.ProcessData,ProDatabase" table="ProcessData" lazy="true">
+    <id name="SerialNo" column="SerialNo" type="string">
+      <generator class="assigned" />
+    </id>
+    <property name="ClientCode" column="ClientCode" type="string" />
+    <property name="DoTime" column="DoTime" type="datetime" />
+    <property name="IdtTopIsOK" column="IdtTopIsOK" type="boolean" />
+    <property name="VerTopIsOK" column="VerTopIsOK" type="boolean" />
+    <property name="ImagePathIdtTop" column="ImagePathIdtTop" type="string" />
+    <property name="ImagePathVerTop" column="ImagePathVerTop" type="string" />
+    <property name="ElapseIdtTop" column="ElapseIdtTop" type="int" />
+    <property name="ElapseVerTop" column="ElapseVerTop" type="int" />
+    <property name="IdtTop_IsDefected" column="IdtTop_IsDefected" type="boolean" />
+    <property name="IdtTop_X" column="IdtTop_X" type="double" />
+    <property name="IdtTop_Y" column="IdtTop_Y" type="double" />
+    <property name="IdtTop_Z" column="IdtTop_Z" type="double" />
+    <property name="IdtTop_RZ" column="IdtTop_RZ" type="double"/>
+    <property name="IdtTop_Length" column="IdtTop_Length" type="double" />
+    <property name="IdtTop_Width" column="IdtTop_Width" type="double" />
+    <property name="IdtBotIsOK" column="IdtBotIsOK" type="boolean" />
+    <property name="ImagePathIdtBot" column="ImagePathIdtBot" type="string" />
+    <property name="ElapseIdtBot" column="ElapseIdtBot" type="int" />
+    <property name="IdtBot_IsDefected" column="IdtBot_IsDefected" type="boolean" />
+    <property name="IdtBot_X" column="IdtBot_X" type="double" />
+    <property name="IdtBot_Y" column="IdtBot_Y" type="double" />
+    <property name="IdtBot_Z" column="IdtBot_Z" type="double" />
+    <property name="IdtBot_RZ" column="IdtBot_RZ" type="double" />
+    <property name="IdtBot_Length" column="IdtBot_Length" type="double" />
+    <property name="IdtBot_Width" column="IdtBot_Width" type="double" />
+    <property name="Result" column="Result" type="string" />
+    <property name="Remark" column="Remark" type="string" />
+  </class>
+</hibernate-mapping>

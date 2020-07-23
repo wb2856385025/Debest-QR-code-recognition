@@ -1,0 +1,1020 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="chs_BBI_ANNULUS" xml:space="preserve">
+    <value>圆环</value>
+  </data>
+  <data name="chs_BBI_CIRCLE" xml:space="preserve">
+    <value>圆形</value>
+  </data>
+  <data name="chs_BBI_CIRCULARARC" xml:space="preserve">
+    <value>有向圆弧</value>
+  </data>
+  <data name="chs_BBI_DELETEACTIVE" xml:space="preserve">
+    <value>删除活动ROI</value>
+  </data>
+  <data name="chs_BBI_DELETEALL" xml:space="preserve">
+    <value>删除所有ROI</value>
+  </data>
+  <data name="chs_BBI_LINE" xml:space="preserve">
+    <value>矢量线段</value>
+  </data>
+  <data name="chs_BBI_LOADIMAGE" xml:space="preserve">
+    <value>加载图像</value>
+  </data>
+  <data name="chs_BBI_RECTANGLE1" xml:space="preserve">
+    <value>齐轴矩形</value>
+  </data>
+  <data name="chs_BBI_RECTANGLE2" xml:space="preserve">
+    <value>仿射矩形</value>
+  </data>
+  <data name="chs_BBI_RESETWINDOW" xml:space="preserve">
+    <value>重置窗口</value>
+  </data>
+  <data name="chs_BCHKI_MAGNIFY" xml:space="preserve">
+    <value>局部放大</value>
+  </data>
+  <data name="chs_BCHKI_MOVE" xml:space="preserve">
+    <value>移动图像</value>
+  </data>
+  <data name="chs_BCHKI_NONE" xml:space="preserve">
+    <value>无操作</value>
+  </data>
+  <data name="chs_BCHKI_ZOOM" xml:space="preserve">
+    <value>缩放图像</value>
+  </data>
+  <data name="chs_CHKE_ADD" xml:space="preserve">
+    <value>新增</value>
+  </data>
+  <data name="chs_CHKE_DELETE" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="chs_CHKE_MODECONTINUE" xml:space="preserve">
+    <value>连续</value>
+  </data>
+  <data name="chs_CHKE_MODEJOG" xml:space="preserve">
+    <value>点动</value>
+  </data>
+  <data name="chs_CHKE_MODIFY" xml:space="preserve">
+    <value>修改</value>
+  </data>
+  <data name="chs_CHKE_SPEEDHIGH" xml:space="preserve">
+    <value>高速</value>
+  </data>
+  <data name="chs_CHKE_SPEEDLOW" xml:space="preserve">
+    <value>低速</value>
+  </data>
+  <data name="chs_CHKE_SPEEDMEDIUM" xml:space="preserve">
+    <value>中速</value>
+  </data>
+  <data name="chs_CHKE_UPDATEBAUDRATE" xml:space="preserve">
+    <value>更新波特率</value>
+  </data>
+  <data name="chs_CHKE_UPDATECAMERABRAND" xml:space="preserve">
+    <value>更新品牌</value>
+  </data>
+  <data name="chs_CHKE_UPDATECAMERAEXPOSURE" xml:space="preserve">
+    <value>更新曝光</value>
+  </data>
+  <data name="chs_CHKE_UPDATECAMERAFPS" xml:space="preserve">
+    <value>更新帧率</value>
+  </data>
+  <data name="chs_CHKE_UPDATECAMERAGAIN" xml:space="preserve">
+    <value>更新增益</value>
+  </data>
+  <data name="chs_CHKE_UPDATECAMERANAME" xml:space="preserve">
+    <value>更新名称</value>
+  </data>
+  <data name="chs_CHKE_UPDATECAMERASN" xml:space="preserve">
+    <value>更新序号</value>
+  </data>
+  <data name="chs_CHKE_UPDATEDATABITS" xml:space="preserve">
+    <value>更新数据位</value>
+  </data>
+  <data name="chs_CHKE_UPDATEPARITY" xml:space="preserve">
+    <value>更新校验位</value>
+  </data>
+  <data name="chs_CHKE_UPDATESELECTION" xml:space="preserve">
+    <value>更新端口项</value>
+  </data>
+  <data name="chs_CHKE_UPDATESTOPBITS" xml:space="preserve">
+    <value>更新停止位</value>
+  </data>
+  <data name="chs_DISABLELASTROUTINE" xml:space="preserve">
+    <value>否</value>
+  </data>
+  <data name="chs_ENABLELASTROUTINE" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="chs_FRM_LOGIN" xml:space="preserve">
+    <value>账户登录</value>
+  </data>
+  <data name="chs_FRM_MODIFYREGION" xml:space="preserve">
+    <value>区域定义与修改</value>
+  </data>
+  <data name="chs_FRM_ROIINTERACTIVE" xml:space="preserve">
+    <value>ROI 交互操作窗口</value>
+  </data>
+  <data name="chs_FRM_SETCONFIG" xml:space="preserve">
+    <value>设置配置</value>
+  </data>
+  <data name="chs_FRM_TOOLCENTEROFFSET" xml:space="preserve">
+    <value>工具坐标系偏移</value>
+  </data>
+  <data name="chs_GRPC_ACCOUNTDETAIL" xml:space="preserve">
+    <value>账户详情</value>
+  </data>
+  <data name="chs_GRPC_ACCOUNTPROMOTION" xml:space="preserve">
+    <value>用户与密码</value>
+  </data>
+  <data name="chs_GRPC_ACCOUNTSDETAIL" xml:space="preserve">
+    <value>账户详情</value>
+  </data>
+  <data name="chs_GRPC_CFGBOARD" xml:space="preserve">
+    <value>板卡配置</value>
+  </data>
+  <data name="chs_GRPC_CFGCAMERA" xml:space="preserve">
+    <value>相机配置</value>
+  </data>
+  <data name="chs_GRPC_CFGSERIALPORT" xml:space="preserve">
+    <value>串口配置</value>
+  </data>
+  <data name="chs_GRPC_CFGSOCKET" xml:space="preserve">
+    <value>Socket配置</value>
+  </data>
+  <data name="chs_GRPC_CFGSYSTEM" xml:space="preserve">
+    <value>系统配置</value>
+  </data>
+  <data name="chs_GRPC_CFGWEB" xml:space="preserve">
+    <value>Web配置</value>
+  </data>
+  <data name="chs_GRPC_MODESTEP" xml:space="preserve">
+    <value>模式/步距</value>
+  </data>
+  <data name="chs_GRPC_OPERATIONOPTION" xml:space="preserve">
+    <value>操作选项</value>
+  </data>
+  <data name="chs_GRPC_OPERATIONPROMOTION" xml:space="preserve">
+    <value>操作提示</value>
+  </data>
+  <data name="chs_LBLC_AREALIST" xml:space="preserve">
+    <value>定义区域列表</value>
+  </data>
+  <data name="chs_LBLC_BAUDRATE" xml:space="preserve">
+    <value>波特率</value>
+  </data>
+  <data name="chs_LBLC_CAMERABRAND" xml:space="preserve">
+    <value>相机品牌</value>
+  </data>
+  <data name="chs_LBLC_CAMERAEXPOSURE" xml:space="preserve">
+    <value>相机曝光</value>
+  </data>
+  <data name="chs_LBLC_CAMERAFPS" xml:space="preserve">
+    <value>相机帧率</value>
+  </data>
+  <data name="chs_LBLC_CAMERAGAIN" xml:space="preserve">
+    <value>相机增益</value>
+  </data>
+  <data name="chs_LBLC_CAMERANAME" xml:space="preserve">
+    <value>相机名称</value>
+  </data>
+  <data name="chs_LBLC_CAMERANAMEFOR2DBARCODE" xml:space="preserve">
+    <value>识码相机名称</value>
+  </data>
+  <data name="chs_LBLC_CAMERAPROMPT" xml:space="preserve">
+    <value>选中相机的配置</value>
+  </data>
+  <data name="chs_LBLC_CAMERASN" xml:space="preserve">
+    <value>相机序号</value>
+  </data>
+  <data name="chs_LBLC_CLIENTNAME" xml:space="preserve">
+    <value>客户名称</value>
+  </data>
+  <data name="chs_LBLC_DATABITS" xml:space="preserve">
+    <value>数据位</value>
+  </data>
+  <data name="chs_LBLC_ENABLELASTROUTINE" xml:space="preserve">
+    <value>启用上次程式</value>
+  </data>
+  <data name="chs_LBLC_JOGSTEP" xml:space="preserve">
+    <value>点动步距(:mm)</value>
+  </data>
+  <data name="chs_LBLC_LANGUAGEVERSION" xml:space="preserve">
+    <value>软件语言</value>
+  </data>
+  <data name="chs_LBLC_OPERATION" xml:space="preserve">
+    <value>操作选项</value>
+  </data>
+  <data name="chs_LBLC_PACKENDSTR" xml:space="preserve">
+    <value>包尾字符</value>
+  </data>
+  <data name="chs_LBLC_PACKHEADSTR" xml:space="preserve">
+    <value>包头字符</value>
+  </data>
+  <data name="chs_LBLC_PARITY" xml:space="preserve">
+    <value>校验位</value>
+  </data>
+  <data name="chs_LBLC_POINTR1" xml:space="preserve">
+    <value>第一点坐标R:</value>
+  </data>
+  <data name="chs_LBLC_POINTR2" xml:space="preserve">
+    <value>第二点坐标R:</value>
+  </data>
+  <data name="chs_LBLC_POINTX1" xml:space="preserve">
+    <value>第一点坐标X:</value>
+  </data>
+  <data name="chs_LBLC_POINTX2" xml:space="preserve">
+    <value>第二点坐标X:</value>
+  </data>
+  <data name="chs_LBLC_POINTY1" xml:space="preserve">
+    <value>第一点坐标Y:</value>
+  </data>
+  <data name="chs_LBLC_POINTY2" xml:space="preserve">
+    <value>第二点坐标Y:</value>
+  </data>
+  <data name="chs_LBLC_PROMPT" xml:space="preserve">
+    <value>提示:</value>
+  </data>
+  <data name="chs_LBLC_REAMARK" xml:space="preserve">
+    <value>备注:</value>
+  </data>
+  <data name="chs_LBLC_RESULTSPLITSTR" xml:space="preserve">
+    <value>结果分隔符</value>
+  </data>
+  <data name="chs_LBLC_ROUTINEDIRECTORY" xml:space="preserve">
+    <value>程式目录</value>
+  </data>
+  <data name="chs_LBLC_SERIALPORTNAMEFOR2DBARCODE" xml:space="preserve">
+    <value>识码串口名称</value>
+  </data>
+  <data name="chs_LBLC_SERIALPORTPROMPT" xml:space="preserve">
+    <value>选中串口的配置</value>
+  </data>
+  <data name="chs_LBLC_SERIALPORTSELECTION" xml:space="preserve">
+    <value>端口选项</value>
+  </data>
+  <data name="chs_LBLC_STOPBITS" xml:space="preserve">
+    <value>停止位</value>
+  </data>
+  <data name="chs_LBLC_TOOLCENTEROFFSETX" xml:space="preserve">
+    <value>偏移坐标X</value>
+  </data>
+  <data name="chs_LBLC_TOOLCENTEROFFSETY" xml:space="preserve">
+    <value>偏移坐标Y</value>
+  </data>
+  <data name="chs_LBL_ACCOUNT" xml:space="preserve">
+    <value>账户</value>
+  </data>
+  <data name="chs_LBL_ACCOUNTAUTHORITY" xml:space="preserve">
+    <value>权限:</value>
+  </data>
+  <data name="chs_LBL_ACCOUNTLIST" xml:space="preserve">
+    <value>账户列表</value>
+  </data>
+  <data name="chs_LBL_ACCOUNTNAME" xml:space="preserve">
+    <value>名称:</value>
+  </data>
+  <data name="chs_LBL_ACCOUNTPASSWORD" xml:space="preserve">
+    <value>密码:</value>
+  </data>
+  <data name="chs_LBL_ERRORPROMOTION" xml:space="preserve">
+    <value>错误提示</value>
+  </data>
+  <data name="chs_LBL_PASSWORD" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="chs_LKLBL_CALCULATETOOLCENTEROFFSET" xml:space="preserve">
+    <value>计算偏移</value>
+  </data>
+  <data name="chs_LKLBL_GETPOSITION1" xml:space="preserve">
+    <value>获取坐标</value>
+  </data>
+  <data name="chs_LKLBL_GETPOSITION2" xml:space="preserve">
+    <value>获取坐标</value>
+  </data>
+  <data name="chs_LKLBL_GOTOPOSITION1" xml:space="preserve">
+    <value>定位坐标</value>
+  </data>
+  <data name="chs_LKLBL_GOTOPOSITION2" xml:space="preserve">
+    <value>定位坐标</value>
+  </data>
+  <data name="chs_RBPGRP_IMAGEFUNCTION" xml:space="preserve">
+    <value>图像功能组</value>
+  </data>
+  <data name="chs_RBPGRP_OPERATION" xml:space="preserve">
+    <value>交互操作组</value>
+  </data>
+  <data name="chs_RBPGRP_ROISHAPE" xml:space="preserve">
+    <value>区域形状组</value>
+  </data>
+  <data name="chs_RBPGRP_VIEWOPTION" xml:space="preserve">
+    <value>视图选项组</value>
+  </data>
+  <data name="chs_RBP_ROIINTERACTIVE" xml:space="preserve">
+    <value>关注区域</value>
+  </data>
+  <data name="chs_RBTN_ADD" xml:space="preserve">
+    <value>新增</value>
+  </data>
+  <data name="chs_RBTN_DELETE" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="chs_RBTN_MODIFY" xml:space="preserve">
+    <value>修改</value>
+  </data>
+  <data name="chs_SBTN_ADDAXES" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="chs_SBTN_ADDINPUT" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="chs_SBTN_ADDOUTPUT" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="chs_SBTN_CAMERACALIBRATE" xml:space="preserve">
+    <value>相机标定</value>
+  </data>
+  <data name="chs_SBTN_CAMERACONFIRMUPDATE" xml:space="preserve">
+    <value>确认更新</value>
+  </data>
+  <data name="chs_SBTN_CANCEL" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="chs_SBTN_CONFIRM" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="chs_SBTN_CONFIRMA" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="chs_SBTN_CONFIRMG" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="chs_SBTN_DEFINEREGION" xml:space="preserve">
+    <value>定义区域</value>
+  </data>
+  <data name="chs_SBTN_DELETEAXES" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="chs_SBTN_DELETEINPUT" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="chs_SBTN_DELETEOUTPUT" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="chs_SBTN_DOWNLOADPARAMETER" xml:space="preserve">
+    <value>下载参数</value>
+  </data>
+  <data name="chs_SBTN_ENUMERATESERIALPORT" xml:space="preserve">
+    <value>枚举串口</value>
+  </data>
+  <data name="chs_SBTN_ERASEREGION" xml:space="preserve">
+    <value>擦除区域</value>
+  </data>
+  <data name="chs_SBTN_EXIT" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="chs_SBTN_LOAD" xml:space="preserve">
+    <value>加载图像</value>
+  </data>
+  <data name="chs_SBTN_LOGIN" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="chs_SBTN_SERIALPORTCONFIRMUPDATE" xml:space="preserve">
+    <value>确认更新</value>
+  </data>
+  <data name="chs_SBTN_UPDATEAXES" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="chs_SBTN_UPDATEINPUT" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="chs_SBTN_UPDATEOUTPUT" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="chs_SBTN_UPLOADPARAMETER" xml:space="preserve">
+    <value>上载参数</value>
+  </data>
+  <data name="chs_TLSTRPBTN_ROTATECENTER" xml:space="preserve">
+    <value>旋转中心</value>
+  </data>
+  <data name="chs_TLSTRPBTN_SETCAMERA" xml:space="preserve">
+    <value>相机设置</value>
+  </data>
+  <data name="chs_TLSTRPMITM_CALIBRATE9POINT" xml:space="preserve">
+    <value>九点标定</value>
+  </data>
+  <data name="chs_TLSTRPMITM_CALIBRATPLATE" xml:space="preserve">
+    <value>标定板标定</value>
+  </data>
+  <data name="chs_TLSTRP_MATCHMODEL" xml:space="preserve">
+    <value>匹配模型</value>
+  </data>
+  <data name="chs_TSTRPBTN_ACQUIRECONTINUE" xml:space="preserve">
+    <value>连续采集</value>
+  </data>
+  <data name="chs_TSTRPBTN_ACQUIREONCE" xml:space="preserve">
+    <value>单张采集(软)</value>
+  </data>
+  <data name="chs_XTABP_GENERALAUTHORITY" xml:space="preserve">
+    <value>一般权限</value>
+  </data>
+  <data name="chs_XTAB_ACCOUNTMANAGER" xml:space="preserve">
+    <value>账户管理</value>
+  </data>
+  <data name="chs_XTAB_ADMINISTRATORAUTHORITY" xml:space="preserve">
+    <value>管理员权限</value>
+  </data>
+  <data name="chs_XTBP_CFGAXES" xml:space="preserve">
+    <value>轴配置</value>
+  </data>
+  <data name="chs_XTBP_CFGBOARD" xml:space="preserve">
+    <value>板卡配置</value>
+  </data>
+  <data name="chs_XTBP_CFGCAMERA" xml:space="preserve">
+    <value>相机配置</value>
+  </data>
+  <data name="chs_XTBP_CFGINPUT" xml:space="preserve">
+    <value>输入配置</value>
+  </data>
+  <data name="chs_XTBP_CFGOUTPUT" xml:space="preserve">
+    <value>输出配置</value>
+  </data>
+  <data name="chs_XTBP_CFGSERIALPORT" xml:space="preserve">
+    <value>串口配置</value>
+  </data>
+  <data name="chs_XTBP_CFGSOCKET" xml:space="preserve">
+    <value>Socket配置</value>
+  </data>
+  <data name="chs_XTBP_CFGSYSTEM" xml:space="preserve">
+    <value>系统配置</value>
+  </data>
+  <data name="chs_XTBP_CFGWEB" xml:space="preserve">
+    <value>Web配置</value>
+  </data>
+  <data name="en_BBI_ANNULUS" xml:space="preserve">
+    <value>Annulus</value>
+  </data>
+  <data name="en_BBI_CIRCLE" xml:space="preserve">
+    <value>Circle</value>
+  </data>
+  <data name="en_BBI_CIRCULARARC" xml:space="preserve">
+    <value>CircularArc</value>
+  </data>
+  <data name="en_BBI_DELETEACTIVE" xml:space="preserve">
+    <value>Delete ActiveROI</value>
+  </data>
+  <data name="en_BBI_DELETEALL" xml:space="preserve">
+    <value>Delete AllROI</value>
+  </data>
+  <data name="en_BBI_LINE" xml:space="preserve">
+    <value>Line</value>
+  </data>
+  <data name="en_BBI_LOADIMAGE" xml:space="preserve">
+    <value>Load Image</value>
+  </data>
+  <data name="en_BBI_RECTANGLE1" xml:space="preserve">
+    <value>Rectangle1</value>
+  </data>
+  <data name="en_BBI_RECTANGLE2" xml:space="preserve">
+    <value>Rectangle2</value>
+  </data>
+  <data name="en_BBI_RESETWINDOW" xml:space="preserve">
+    <value>Reset Window</value>
+  </data>
+  <data name="en_BCHKI_MAGNIFY" xml:space="preserve">
+    <value>Local Magnify</value>
+  </data>
+  <data name="en_BCHKI_MOVE" xml:space="preserve">
+    <value>Move Image</value>
+  </data>
+  <data name="en_BCHKI_NONE" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="en_BCHKI_ZOOM" xml:space="preserve">
+    <value>Zoom Image</value>
+  </data>
+  <data name="en_CHKE_ADD" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="en_CHKE_DELETE" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="en_CHKE_MODECONTINUE" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="en_CHKE_MODEJOG" xml:space="preserve">
+    <value>Jog</value>
+  </data>
+  <data name="en_CHKE_MODIFY" xml:space="preserve">
+    <value>Modify</value>
+  </data>
+  <data name="en_CHKE_SPEEDHIGH" xml:space="preserve">
+    <value>High</value>
+  </data>
+  <data name="en_CHKE_SPEEDLOW" xml:space="preserve">
+    <value>Low</value>
+  </data>
+  <data name="en_CHKE_SPEEDMEDIUM" xml:space="preserve">
+    <value>Medium</value>
+  </data>
+  <data name="en_CHKE_UPDATEBAUDRATE" xml:space="preserve">
+    <value>UpdateBaudRate</value>
+  </data>
+  <data name="en_CHKE_UPDATECAMERABRAND" xml:space="preserve">
+    <value>UpdateBrand</value>
+  </data>
+  <data name="en_CHKE_UPDATECAMERAEXPOSURE" xml:space="preserve">
+    <value>UpdateExposure</value>
+  </data>
+  <data name="en_CHKE_UPDATECAMERAFPS" xml:space="preserve">
+    <value>UpdateFPS</value>
+  </data>
+  <data name="en_CHKE_UPDATECAMERAGAIN" xml:space="preserve">
+    <value>UpdateGain</value>
+  </data>
+  <data name="en_CHKE_UPDATECAMERANAME" xml:space="preserve">
+    <value>UpdateName</value>
+  </data>
+  <data name="en_CHKE_UPDATECAMERASN" xml:space="preserve">
+    <value>UpdateSN</value>
+  </data>
+  <data name="en_CHKE_UPDATEDATABITS" xml:space="preserve">
+    <value>UpdateDataBits</value>
+  </data>
+  <data name="en_CHKE_UPDATEPARITY" xml:space="preserve">
+    <value>UpdateParity</value>
+  </data>
+  <data name="en_CHKE_UPDATESELECTION" xml:space="preserve">
+    <value>UpdatePort</value>
+  </data>
+  <data name="en_CHKE_UPDATESTOPBITS" xml:space="preserve">
+    <value>UpdateStopBits</value>
+  </data>
+  <data name="en_DISABLELASTROUTINE" xml:space="preserve">
+    <value>NO</value>
+  </data>
+  <data name="en_ENABLELASTROUTINE" xml:space="preserve">
+    <value>YES</value>
+  </data>
+  <data name="en_FRM_LOGIN" xml:space="preserve">
+    <value>LogIn</value>
+  </data>
+  <data name="en_FRM_MODIFYREGION" xml:space="preserve">
+    <value>DefineAndModifyArea</value>
+  </data>
+  <data name="en_FRM_ROIINTERACTIVE" xml:space="preserve">
+    <value>ROI Interactive Frame</value>
+  </data>
+  <data name="en_FRM_SETCONFIG" xml:space="preserve">
+    <value>SetConfig</value>
+  </data>
+  <data name="en_FRM_TOOLCENTEROFFSET" xml:space="preserve">
+    <value>ToolCenterOffset</value>
+  </data>
+  <data name="en_GRPC_ACCOUNTDETAIL" xml:space="preserve">
+    <value>AccountDetail</value>
+  </data>
+  <data name="en_GRPC_ACCOUNTPROMOTION" xml:space="preserve">
+    <value>AccountPassWord</value>
+  </data>
+  <data name="en_GRPC_ACCOUNTSDETAIL" xml:space="preserve">
+    <value>AccountsDetail</value>
+  </data>
+  <data name="en_GRPC_CFGBOARD" xml:space="preserve">
+    <value>BoardConfig</value>
+  </data>
+  <data name="en_GRPC_CFGCAMERA" xml:space="preserve">
+    <value>CameraConfig</value>
+  </data>
+  <data name="en_GRPC_CFGSERIALPORT" xml:space="preserve">
+    <value>SerialPortConfig</value>
+  </data>
+  <data name="en_GRPC_CFGSOCKET" xml:space="preserve">
+    <value>SocketConfig</value>
+  </data>
+  <data name="en_GRPC_CFGSYSTEM" xml:space="preserve">
+    <value>SystemConfig</value>
+  </data>
+  <data name="en_GRPC_CFGWEB" xml:space="preserve">
+    <value>WebConfig</value>
+  </data>
+  <data name="en_GRPC_MODESTEP" xml:space="preserve">
+    <value>Mode/Step</value>
+  </data>
+  <data name="en_GRPC_OPERATIONOPTION" xml:space="preserve">
+    <value>OperationOption</value>
+  </data>
+  <data name="en_GRPC_OPERATIONPROMOTION" xml:space="preserve">
+    <value>OperationPromotion</value>
+  </data>
+  <data name="en_LBLC_AREALIST" xml:space="preserve">
+    <value>DefineAreaList</value>
+  </data>
+  <data name="en_LBLC_BAUDRATE" xml:space="preserve">
+    <value>BaudRate</value>
+  </data>
+  <data name="en_LBLC_CAMERABRAND" xml:space="preserve">
+    <value>CameraBrand</value>
+  </data>
+  <data name="en_LBLC_CAMERAEXPOSURE" xml:space="preserve">
+    <value>ExposureTime</value>
+  </data>
+  <data name="en_LBLC_CAMERAFPS" xml:space="preserve">
+    <value>CameraFPS</value>
+  </data>
+  <data name="en_LBLC_CAMERAGAIN" xml:space="preserve">
+    <value>CameraGain</value>
+  </data>
+  <data name="en_LBLC_CAMERANAME" xml:space="preserve">
+    <value>CameraName</value>
+  </data>
+  <data name="en_LBLC_CAMERANAMEFOR2DBARCODE" xml:space="preserve">
+    <value>CameraNameForBarcode</value>
+  </data>
+  <data name="en_LBLC_CAMERAPROMPT" xml:space="preserve">
+    <value>CameraConfigForSelected</value>
+  </data>
+  <data name="en_LBLC_CAMERASN" xml:space="preserve">
+    <value>SerialNumber</value>
+  </data>
+  <data name="en_LBLC_CLIENTNAME" xml:space="preserve">
+    <value>ClientName</value>
+  </data>
+  <data name="en_LBLC_DATABITS" xml:space="preserve">
+    <value>DataBits</value>
+  </data>
+  <data name="en_LBLC_ENABLELASTROUTINE" xml:space="preserve">
+    <value>EnableLastRoutine</value>
+  </data>
+  <data name="en_LBLC_JOGSTEP" xml:space="preserve">
+    <value>JogStep(:mm)</value>
+  </data>
+  <data name="en_LBLC_LANGUAGEVERSION" xml:space="preserve">
+    <value>AppLanguage</value>
+  </data>
+  <data name="en_LBLC_OPERATION" xml:space="preserve">
+    <value>Operation</value>
+  </data>
+  <data name="en_LBLC_PACKENDSTR" xml:space="preserve">
+    <value>PacketEnd</value>
+  </data>
+  <data name="en_LBLC_PACKHEADSTR" xml:space="preserve">
+    <value>PacketHeader</value>
+  </data>
+  <data name="en_LBLC_PARITY" xml:space="preserve">
+    <value>Parity</value>
+  </data>
+  <data name="en_LBLC_POINTR1" xml:space="preserve">
+    <value>Point1_R</value>
+  </data>
+  <data name="en_LBLC_POINTR2" xml:space="preserve">
+    <value>Point2_R</value>
+  </data>
+  <data name="en_LBLC_POINTX1" xml:space="preserve">
+    <value>Point1_X:</value>
+  </data>
+  <data name="en_LBLC_POINTX2" xml:space="preserve">
+    <value>Point2_X:</value>
+  </data>
+  <data name="en_LBLC_POINTY1" xml:space="preserve">
+    <value>Point1_Y:</value>
+  </data>
+  <data name="en_LBLC_POINTY2" xml:space="preserve">
+    <value>Point2_Y:</value>
+  </data>
+  <data name="en_LBLC_PROMPT" xml:space="preserve">
+    <value>Prompt</value>
+  </data>
+  <data name="en_LBLC_REAMARK" xml:space="preserve">
+    <value>Remark:</value>
+  </data>
+  <data name="en_LBLC_RESULTSPLITSTR" xml:space="preserve">
+    <value>Separator</value>
+  </data>
+  <data name="en_LBLC_ROUTINEDIRECTORY" xml:space="preserve">
+    <value>RoutineDir</value>
+  </data>
+  <data name="en_LBLC_SERIALPORTNAMEFOR2DBARCODE" xml:space="preserve">
+    <value>SerialPortNameForBarcode</value>
+  </data>
+  <data name="en_LBLC_SERIALPORTPROMPT" xml:space="preserve">
+    <value>PortConfigForSelected</value>
+  </data>
+  <data name="en_LBLC_SERIALPORTSELECTION" xml:space="preserve">
+    <value>PortSelection</value>
+  </data>
+  <data name="en_LBLC_STOPBITS" xml:space="preserve">
+    <value>StopBits</value>
+  </data>
+  <data name="en_LBLC_TOOLCENTEROFFSETX" xml:space="preserve">
+    <value>ToolCenterOffsetX</value>
+  </data>
+  <data name="en_LBLC_TOOLCENTEROFFSETY" xml:space="preserve">
+    <value>ToolCenterOffsetY</value>
+  </data>
+  <data name="en_LBL_ACCOUNT" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="en_LBL_ACCOUNTAUTHORITY" xml:space="preserve">
+    <value>Authority:</value>
+  </data>
+  <data name="en_LBL_ACCOUNTLIST" xml:space="preserve">
+    <value>AccountList</value>
+  </data>
+  <data name="en_LBL_ACCOUNTNAME" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="en_LBL_ACCOUNTPASSWORD" xml:space="preserve">
+    <value>PassWord:</value>
+  </data>
+  <data name="en_LBL_ERRORPROMOTION" xml:space="preserve">
+    <value>ErrorPromotion</value>
+  </data>
+  <data name="en_LBL_PASSWORD" xml:space="preserve">
+    <value>PassWord</value>
+  </data>
+  <data name="en_LKLBL_CALCULATETOOLCENTEROFFSET" xml:space="preserve">
+    <value>CalculateOffset</value>
+  </data>
+  <data name="en_LKLBL_GETPOSITION1" xml:space="preserve">
+    <value>GetPosition</value>
+  </data>
+  <data name="en_LKLBL_GETPOSITION2" xml:space="preserve">
+    <value>GetPosition</value>
+  </data>
+  <data name="en_LKLBL_GOTOPOSITION1" xml:space="preserve">
+    <value>GoToPosition</value>
+  </data>
+  <data name="en_LKLBL_GOTOPOSITION2" xml:space="preserve">
+    <value>GoToPosition</value>
+  </data>
+  <data name="en_RBPGRP_IMAGEFUNCTION" xml:space="preserve">
+    <value>Image function</value>
+  </data>
+  <data name="en_RBPGRP_OPERATION" xml:space="preserve">
+    <value>Interactive operation</value>
+  </data>
+  <data name="en_RBPGRP_ROISHAPE" xml:space="preserve">
+    <value>Region shape</value>
+  </data>
+  <data name="en_RBPGRP_VIEWOPTION" xml:space="preserve">
+    <value>View option</value>
+  </data>
+  <data name="en_RBP_ROIINTERACTIVE" xml:space="preserve">
+    <value>Region of interest</value>
+  </data>
+  <data name="en_RBTN_ADD" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="en_RBTN_DELETE" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="en_RBTN_MODIFY" xml:space="preserve">
+    <value>Modify</value>
+  </data>
+  <data name="en_SBTN_ADDAXES" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="en_SBTN_ADDINPUT" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="en_SBTN_ADDOUTPUT" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="en_SBTN_CAMERACALIBRATE" xml:space="preserve">
+    <value>CameraCalibrate</value>
+  </data>
+  <data name="en_SBTN_CAMERACONFIRMUPDATE" xml:space="preserve">
+    <value>ConfigmUpdate</value>
+  </data>
+  <data name="en_SBTN_CANCEL" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="en_SBTN_CONFIRM" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="en_SBTN_CONFIRMA" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="en_SBTN_CONFIRMG" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="en_SBTN_DEFINEREGION" xml:space="preserve">
+    <value>DefineArea</value>
+  </data>
+  <data name="en_SBTN_DELETEAXES" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="en_SBTN_DELETEINPUT" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="en_SBTN_DELETEOUTPUT" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="en_SBTN_DOWNLOADPARAMETER" xml:space="preserve">
+    <value>DownLoadPara</value>
+  </data>
+  <data name="en_SBTN_ENUMERATESERIALPORT" xml:space="preserve">
+    <value>EnumeratePorts</value>
+  </data>
+  <data name="en_SBTN_ERASEREGION" xml:space="preserve">
+    <value>EraseArea</value>
+  </data>
+  <data name="en_SBTN_EXIT" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="en_SBTN_LOAD" xml:space="preserve">
+    <value>LoadImage</value>
+  </data>
+  <data name="en_SBTN_LOGIN" xml:space="preserve">
+    <value>LogIn</value>
+  </data>
+  <data name="en_SBTN_SERIALPORTCONFIRMUPDATE" xml:space="preserve">
+    <value>ConfirmUpdate</value>
+  </data>
+  <data name="en_SBTN_UPDATEAXES" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="en_SBTN_UPDATEINPUT" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="en_SBTN_UPDATEOUTPUT" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="en_SBTN_UPLOADPARAMETER" xml:space="preserve">
+    <value>UpLoadPara</value>
+  </data>
+  <data name="en_TLSTRPBTN_ROTATECENTER" xml:space="preserve">
+    <value>RotateCenter</value>
+  </data>
+  <data name="en_TLSTRPBTN_SETCAMERA" xml:space="preserve">
+    <value>SetCamera</value>
+  </data>
+  <data name="en_TLSTRPMITM_CALIBRATE9POINT" xml:space="preserve">
+    <value>Calibrate9PointBased</value>
+  </data>
+  <data name="en_TLSTRPMITM_CALIBRATPLATE" xml:space="preserve">
+    <value>CalibratePlateBased</value>
+  </data>
+  <data name="en_TLSTRP_MATCHMODEL" xml:space="preserve">
+    <value>MatchModel</value>
+  </data>
+  <data name="en_TSTRPBTN_ACQUIRECONTINUE" xml:space="preserve">
+    <value>AcquireContinuous</value>
+  </data>
+  <data name="en_TSTRPBTN_ACQUIREONCE" xml:space="preserve">
+    <value>AcquireOnce(I)</value>
+  </data>
+  <data name="en_XTABP_ACCOUNTMANAGER" xml:space="preserve">
+    <value>AccountManager</value>
+  </data>
+  <data name="en_XTABP_ADMINISTRATORAUTHORITY" xml:space="preserve">
+    <value>AdministratorAuthority</value>
+  </data>
+  <data name="en_XTABP_GENERALAUTHORITY" xml:space="preserve">
+    <value>GeneralAuthority</value>
+  </data>
+  <data name="en_XTBP_CFGAXES" xml:space="preserve">
+    <value>AxesConfig</value>
+  </data>
+  <data name="en_XTBP_CFGBOARD" xml:space="preserve">
+    <value>BoardConfig</value>
+  </data>
+  <data name="en_XTBP_CFGCAMERA" xml:space="preserve">
+    <value>CameraConfig</value>
+  </data>
+  <data name="en_XTBP_CFGINPUT" xml:space="preserve">
+    <value>InputConfig</value>
+  </data>
+  <data name="en_XTBP_CFGOUTPUT" xml:space="preserve">
+    <value>OutConfig</value>
+  </data>
+  <data name="en_XTBP_CFGSERIALPORT" xml:space="preserve">
+    <value>SerialPortConfig</value>
+  </data>
+  <data name="en_XTBP_CFGSOCKET" xml:space="preserve">
+    <value>SocketConfig</value>
+  </data>
+  <data name="en_XTBP_CFGSYSTEM" xml:space="preserve">
+    <value>SystemConfig</value>
+  </data>
+  <data name="en_XTBP_CFGWEB" xml:space="preserve">
+    <value>WebConfig</value>
+  </data>
+</root>

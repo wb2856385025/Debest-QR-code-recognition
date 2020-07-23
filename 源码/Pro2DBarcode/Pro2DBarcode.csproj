@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B2DAA9A3-3867-47F6-ACDF-DC8B72E9EB48}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pro2DBarcode</RootNamespace>
+    <AssemblyName>Pro2DBarcode</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ExeIco.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ProCommon\SolutionReSource\DllForDevExpress\DevExpress.BonusSkins.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ProCommon\SolutionReSource\DllForDevExpress\DevExpress.Data.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Images.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ProCommon\SolutionReSource\DllForDevExpress\DevExpress.Images.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v17.2.Core, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ProCommon\SolutionReSource\DllForDevExpress\DevExpress.Office.v17.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v17.2.Core, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ProCommon\SolutionReSource\DllForDevExpress\DevExpress.Pdf.v17.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ProCommon\SolutionReSource\DllForDevExpress\DevExpress.Printing.v17.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v17.2.Core, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ProCommon\SolutionReSource\DllForDevExpress\DevExpress.RichEdit.v17.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v17.2.Core, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ProCommon\SolutionReSource\DllForDevExpress\DevExpress.Sparkline.v17.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ProCommon\SolutionReSource\DllForDevExpress\DevExpress.Utils.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ProCommon\SolutionReSource\DllForDevExpress\DevExpress.XtraBars.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ProCommon\SolutionReSource\DllForDevExpress\DevExpress.XtraEditors.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ProCommon\SolutionReSource\DllForDevExpress\DevExpress.XtraGrid.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ProCommon\SolutionReSource\DllForDevExpress\DevExpress.XtraLayout.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ProCommon\SolutionReSource\DllForDevExpress\DevExpress.XtraNavBar.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ProCommon\SolutionReSource\DllForDevExpress\DevExpress.XtraPrinting.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ProCommon\SolutionReSource\DllForDevExpress\DevExpress.XtraTreeList.v17.2.dll</HintPath>
+    </Reference>
+    <Reference Include="halcondotnet, Version=12.0.0.0, Culture=neutral, PublicKeyToken=4973bed59ddbf2b8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ProCommon\SolutionReSource\DllForImageProcess\Halcon\halcondotnet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Algorithm\ImageProcess.cs" />
+    <Compile Include="Config\Config.cs" />
+    <Compile Include="Config\ConfigAccount.cs" />
+    <Compile Include="Config\ConfigAPIHandle.cs" />
+    <Compile Include="Config\ConfigBoardCtrller.cs" />
+    <Compile Include="Config\ConfigCamera.cs" />
+    <Compile Include="Config\ConfigMotionPara.cs" />
+    <Compile Include="Config\ConfigSerialPort.cs" />
+    <Compile Include="Config\ConfigSocket.cs" />
+    <Compile Include="Config\ConfigSystem.cs" />
+    <Compile Include="Config\ConfigUserControls.cs" />
+    <Compile Include="Config\ConfigVisionPara.cs" />
+    <Compile Include="Config\ConfigWeb.cs" />
+    <Compile Include="Config\MotionPara\MotionPara.cs" />
+    <Compile Include="Config\VisionPara\VisionPara.cs" />
+    <Compile Include="Data\ProcessData.cs" />
+    <Compile Include="Device\Device.cs" />
+    <Compile Include="Device\Device_Camera.cs" />
+    <Compile Include="Device\Device_SerialPort.cs" />
+    <Compile Include="Manager\ConfigManager.cs" />
+    <Compile Include="Manager\DeviceManager.cs" />
+    <Compile Include="Manager\SystemManager.cs" />
+    <Compile Include="Manager\UIManager.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DerivedControl\AlarmLogModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\DerivedControl\AlarmLogModule.Designer.cs">
+      <DependentUpon>AlarmLogModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DerivedControl\AuxiliaryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\DerivedControl\AuxiliaryControl.Designer.cs">
+      <DependentUpon>AuxiliaryControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DerivedControl\Auxiliary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\DerivedControl\ShooterDetailViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\DerivedControl\ShooterDetailViewer.Designer.cs">
+      <DependentUpon>ShooterDetailViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DerivedControl\ImageResultViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\DerivedControl\ImageResultViewer.Designer.cs">
+      <DependentUpon>ImageResultViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DerivedControl\MainFuncModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\DerivedControl\MainFuncModule.Designer.cs">
+      <DependentUpon>MainFuncModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DerivedControl\RunDataModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\DerivedControl\RunDataModule.Designer.cs">
+      <DependentUpon>RunDataModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DerivedControl\RunLogModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\DerivedControl\RunLogModule.Designer.cs">
+      <DependentUpon>RunLogModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DerivedControl\UI_UsrDefCtrlLocationDebug.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\DerivedControl\UI_UsrDefCtrlLocationDebug.Designer.cs">
+      <DependentUpon>UI_UsrDefCtrlLocationDebug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FrmNewRoutine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmNewRoutine.Designer.cs">
+      <DependentUpon>FrmNewRoutine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FrmRoutineManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmRoutineManager.Designer.cs">
+      <DependentUpon>FrmRoutineManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FrmSetRoutinePara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmSetRoutinePara.Designer.cs">
+      <DependentUpon>FrmSetRoutinePara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UI_CheckProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UI_CheckProgress.designer.cs">
+      <DependentUpon>UI_CheckProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UI_LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UI_LogIn.designer.cs">
+      <DependentUpon>UI_LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UI_AccountManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UI_AccountManager.designer.cs">
+      <DependentUpon>UI_AccountManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UI_ModifyRegion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UI_ModifyRegion.Designer.cs">
+      <DependentUpon>UI_ModifyRegion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UI_ROIInteractive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UI_ROIInteractive.Designer.cs">
+      <DependentUpon>UI_ROIInteractive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UI_SetConfigs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UI_SetConfigs.Designer.cs">
+      <DependentUpon>UI_SetConfigs.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DerivedControl\AlarmLogModule.resx">
+      <DependentUpon>AlarmLogModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DerivedControl\AuxiliaryControl.resx">
+      <DependentUpon>AuxiliaryControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DerivedControl\ShooterDetailViewer.resx">
+      <DependentUpon>ShooterDetailViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DerivedControl\ImageResultViewer.resx">
+      <DependentUpon>ImageResultViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DerivedControl\MainFuncModule.resx">
+      <DependentUpon>MainFuncModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DerivedControl\RunDataModule.resx">
+      <DependentUpon>RunDataModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DerivedControl\RunLogModule.resx">
+      <DependentUpon>RunLogModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FrmNewRoutine.resx">
+      <DependentUpon>FrmNewRoutine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FrmRoutineManager.resx">
+      <DependentUpon>FrmRoutineManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FrmSetRoutinePara.resx">
+      <DependentUpon>FrmSetRoutinePara.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UI_CheckProgress.resx">
+      <DependentUpon>UI_CheckProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UI_LogIn.resx">
+      <DependentUpon>UI_LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UI_ModifyRegion.resx">
+      <DependentUpon>UI_ModifyRegion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UI_ROIInteractive.resx">
+      <DependentUpon>UI_ROIInteractive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UI_SetConfigs.resx">
+      <DependentUpon>UI_SetConfigs.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\Pro2DBarcode.Config.VisionPara.VisionPara2DBarcode.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProCommon\ProCommon.csproj">
+      <Project>{50a50049-7374-4b41-bb40-c28b830912a6}</Project>
+      <Name>ProCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProDatabase\ProDatabase.csproj">
+      <Project>{c528eb23-8b77-42e3-8426-370dc6e1750a}</Project>
+      <Name>ProDatabase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProDriver\ProDriver.csproj">
+      <Project>{cfcebb61-91fd-430f-86e7-e9c3e5c48dc9}</Project>
+      <Name>ProDriver</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProVision\ProVision.csproj">
+      <Project>{f2049b64-92ae-48e8-9f6a-ba9e1cc67a37}</Project>
+      <Name>ProVision</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="UI\Component\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ExeIco.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
